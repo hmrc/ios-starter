@@ -1,0 +1,46 @@
+--swiftversion 5.2
+--allman false
+--binarygrouping 4,8
+--closingparen balanced
+--commas always
+--conflictmarkers reject
+--decimalgrouping 3,6
+--elseposition same-line
+--empty void
+--exponentcase lowercase
+--exponentgrouping disabled
+--fractiongrouping disabled
+--fragment false
+--header "/*\n * Copyright {year} HM Revenue & Customs\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */"
+--hexgrouping 4,8
+--hexliteralcase uppercase
+--ifdef indent
+--importgrouping alphabetized
+--indent 4
+--indentcase false
+--linebreaks lf
+--maxwidth 144
+--nospaceoperators 
+--octalgrouping 4,8
+--operatorfunc spaced
+--patternlet hoist
+--self remove
+--selfrequired 
+--semicolons inline
+--stripunusedargs always
+--tabwidth unspecified
+--trailingclosures 
+--trimwhitespace always
+--wraparguments before-first
+--wrapcollections before-first
+--wrapparameters before-first
+--xcodeindentation disabled
+--closingparen same-line
+
+--rules redundantReturn,redundantLetError,redundantLet,redundantExtensionACL,redundantFileprivate,redundantRawValues
+
+#Disabled Rules
+--disable trailingCommas,unusedArguments,redundantType,anyObjectProtocol
+
+#File Options
+--exclude Carthage,Build-Phases,HMRCSharedCode,Pods,SubModule,Templates,fastlane,Config,Artifacts

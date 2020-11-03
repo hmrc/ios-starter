@@ -1,0 +1,33 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Setups up Starter for new project and sets values as described"
+  lane :setup_project do
+  	project_name = "test_project" #prompt(text: "What's the project name?")
+  	app_name = "test_app"#prompt(text: "What's the app name?")
+  	git_origin_url = "url"#prompt(text: "What's the new git repo url?")
+
+  	sh("echo 'Creating new project'")
+	sh("cp Starter ../" + project_name)
+	sh("cd ../" + project_name) 
+
+
+  end
+
+end

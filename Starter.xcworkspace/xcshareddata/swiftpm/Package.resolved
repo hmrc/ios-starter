@@ -1,0 +1,70 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AloeStackView",
+        "repositoryURL": "https://github.com/marlimox/AloeStackView.git",
+        "state": {
+          "branch": null,
+          "revision": "28ef1e50cef1eb38512fae67eb45ddc508f9a9f8",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "DeviceKit",
+        "repositoryURL": "https://github.com/devicekit/DeviceKit.git",
+        "state": {
+          "branch": null,
+          "revision": "dbddb0296e3ee4f83d52f9681e42705020a533e4",
+          "version": "4.2.1"
+        }
+      },
+      {
+        "package": "UIComponents",
+        "repositoryURL": "https://github.com/hmrc/ios-components.git",
+        "state": {
+          "branch": null,
+          "revision": "620038cf761cee50387ab95cb5fba28b0c3b07da",
+          "version": "5.1.3"
+        }
+      },
+      {
+        "package": "ios-core-library",
+        "repositoryURL": "https://github.com/hmrc/ios-core-library.git",
+        "state": {
+          "branch": null,
+          "revision": "1d216090e58606aeff76dad04d5bc6b0417d4bf0",
+          "version": "2.0.8"
+        }
+      },
+      {
+        "package": "Resolver",
+        "repositoryURL": "https://github.com/hmlongco/Resolver.git",
+        "state": {
+          "branch": null,
+          "revision": "cb5b4e1e60046120de87fee14af257e07ad74a62",
+          "version": "1.1.4"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "TrustKit",
+        "repositoryURL": "https://github.com/datatheorem/TrustKit.git",
+        "state": {
+          "branch": null,
+          "revision": "3c953558d61fdd9b136d981764e3242bd92b2648",
+          "version": "1.7.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
