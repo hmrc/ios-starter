@@ -77,10 +77,11 @@ extension AppDelegate {
 
     func setupInitialViewController(animated: Bool) {
         window = UIWindow(frame: UIScreen.main.bounds)
+        let tabBarController = UITabBarController()
+        tabBarController.set(displayScenes: [.home, .settings])
 
         self.window?.replaceRootViewController(
-            DisplayScene.home.viewController,
-            animated: animated
+            tabBarController
         )
     }
 }

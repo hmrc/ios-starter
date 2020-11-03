@@ -23,11 +23,14 @@ protocol Displayable {
 
 enum DisplayScene {
     case home
+    case settings
 
     var displayable: Displayable {
         switch self {
         case .home:
             return Home.Router()
+        case .settings:
+            return Settings.Router()
         }
     }
 

@@ -8,19 +8,19 @@
 import UIKit
 import UIComponents
 
-protocol HomeDisplayLogic: class {
+protocol SettingsDisplayLogic: class {
 
 }
 
-extension Home {
-    class ViewController: StackViewController, HomeDisplayLogic {
-        weak var interactor: HomeBusinessLogic!
-        var router: HomeRoutingLogic!
+extension Settings {
+    class ViewController: StackViewController, SettingsDisplayLogic {
+        weak var interactor: SettingsBusinessLogic!
+        var router: SettingsRoutingLogic!
 
         override func viewDidLoad() {
             super.viewDidLoad()
-            title = "Home" 
             view.backgroundColor = .white
+            title = "Settings"
         }
 
         override func viewDidAppear(_ animated: Bool) {
@@ -29,7 +29,7 @@ extension Home {
 
             stackView.addRow(
                 UILabel.buildH3Label {
-                    $0.text = "Home"
+                    $0.text = "Settings"
                 }
             )
         }

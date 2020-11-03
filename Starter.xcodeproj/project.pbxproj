@@ -49,6 +49,11 @@
 		6C4A56642551779800A3403D /* CoreTestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4A56432551779800A3403D /* CoreTestConstants.swift */; };
 		6C4A56652551779800A3403D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C4A56442551779800A3403D /* Info.plist */; };
 		6C4A56662551779800A3403D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C4A56442551779800A3403D /* Info.plist */; };
+		6C5F17FE2551ACEC0005D38D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F17FA2551ACEC0005D38D /* SettingsViewController.swift */; };
+		6C5F17FF2551ACEC0005D38D /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F17FB2551ACEC0005D38D /* SettingsPresenter.swift */; };
+		6C5F18002551ACEC0005D38D /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F17FC2551ACEC0005D38D /* SettingsInteractor.swift */; };
+		6C5F18012551ACEC0005D38D /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F17FD2551ACEC0005D38D /* SettingsRouter.swift */; };
+		6C5F18092551AEBB0005D38D /* TabBarController+DisplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F18082551AEBB0005D38D /* TabBarController+DisplayScene.swift */; };
 		6CAE021B25375776004EDC15 /* DisplayableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE021A25375776004EDC15 /* DisplayableProtocol.swift */; };
 		6CAE0226253757D5004EDC15 /* ios-core-library in Frameworks */ = {isa = PBXBuildFile; productRef = 6CAE0225253757D5004EDC15 /* ios-core-library */; };
 		6CAE022C253757E9004EDC15 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 6CAE022B253757E9004EDC15 /* UIComponents */; };
@@ -123,6 +128,11 @@
 		6C4A56422551779800A3403D /* CoreTestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreTestHelpers.swift; sourceTree = "<group>"; };
 		6C4A56432551779800A3403D /* CoreTestConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreTestConstants.swift; sourceTree = "<group>"; };
 		6C4A56442551779800A3403D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C5F17FA2551ACEC0005D38D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6C5F17FB2551ACEC0005D38D /* SettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		6C5F17FC2551ACEC0005D38D /* SettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		6C5F17FD2551ACEC0005D38D /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		6C5F18082551AEBB0005D38D /* TabBarController+DisplayScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBarController+DisplayScene.swift"; sourceTree = "<group>"; };
 		6CAE021A25375776004EDC15 /* DisplayableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayableProtocol.swift; sourceTree = "<group>"; };
 		6CAE023A25375884004EDC15 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6CAE023F2537588C004EDC15 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -306,6 +316,7 @@
 				6CAE021A25375776004EDC15 /* DisplayableProtocol.swift */,
 				6CAE024E253758BE004EDC15 /* ModuleNamespaces.swift */,
 				6CF30ED0255161750023C410 /* UIEdgeInsets+Padding.swift */,
+				6C5F18082551AEBB0005D38D /* TabBarController+DisplayScene.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -324,6 +335,10 @@
 		6CAE0223253757A8004EDC15 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				6C5F17FC2551ACEC0005D38D /* SettingsInteractor.swift */,
+				6C5F17FB2551ACEC0005D38D /* SettingsPresenter.swift */,
+				6C5F17FD2551ACEC0005D38D /* SettingsRouter.swift */,
+				6C5F17FA2551ACEC0005D38D /* SettingsViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -622,11 +637,14 @@
 				6CAE024F253758BE004EDC15 /* ModuleNamespaces.swift in Sources */,
 				6CAE021B25375776004EDC15 /* DisplayableProtocol.swift in Sources */,
 				6CAE02402537588C004EDC15 /* HomeRouter.swift in Sources */,
+				6C5F18012551ACEC0005D38D /* SettingsRouter.swift in Sources */,
+				6C5F18002551ACEC0005D38D /* SettingsInteractor.swift in Sources */,
 				6CF30EBD2551606A0023C410 /* StackViewController.swift in Sources */,
 				6C1ACE142537551100F399E9 /* AppDelegate.swift in Sources */,
 				6C4A5628255175E300A3403D /* Services+Injection.swift in Sources */,
 				6CAE025925375B65004EDC15 /* UIViewController+DisplayScene.swift in Sources */,
 				6CAE027725375D88004EDC15 /* TypeAliases.swift in Sources */,
+				6C5F17FF2551ACEC0005D38D /* SettingsPresenter.swift in Sources */,
 				6C4A562D2551761D00A3403D /* AppDelegate+Injection.swift in Sources */,
 				6CAE024A25375899004EDC15 /* HomePresenter.swift in Sources */,
 				6CAE025425375B04004EDC15 /* UINavigationController+DisplayScene.swift in Sources */,
@@ -636,6 +654,8 @@
 				6CAE025E25375BD2004EDC15 /* UIWindow+ReplaceViewController.swift in Sources */,
 				6CF30ED1255161750023C410 /* UIEdgeInsets+Padding.swift in Sources */,
 				6CF30EAD25515F6D0023C410 /* SceneDelegate.swift in Sources */,
+				6C5F17FE2551ACEC0005D38D /* SettingsViewController.swift in Sources */,
+				6C5F18092551AEBB0005D38D /* TabBarController+DisplayScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
