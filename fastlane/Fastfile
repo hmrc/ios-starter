@@ -19,15 +19,30 @@ platform :ios do
 
   desc "Setups up Starter for new project and sets values as described"
   lane :setup_project do
-  	project_name = "test_project" #prompt(text: "What's the project name?")
-  	app_name = "test_app"#prompt(text: "What's the app name?")
-  	git_origin_url = "url"#prompt(text: "What's the new git repo url?")
+  	project_name = prompt(text: "What's the project name?")
+  	app_name = prompt(text: "What's the app name?")
+  	git_origin_url = prompt(text: "What's the new git repo url?")
 
-  	sh("echo 'Creating new project'")
-	sh("cp Starter ../" + project_name)
-	sh("cd ../" + project_name) 
+	sh("cp -r ../../Starter ../../" + project_name)
+	sh("cd ../../" + project_name) 
+	sh("cd ../../" + project_name + " && mv Starter " + project_name)
+	sh("cd ../../" + project_name + " && mv StarterUITests " + project_name + "UITests")
+	sh("cd ../../" + project_name + " && mv StarterTests " + project_name + "Tests")
+	sh("cd ../../" + project_name + " && mv Starter.xcodeproj " + project_name + ".xcodeproj")
 
+	sh("cd ../../" + project_name + " && rm -rf Starter.xcworkspace")
+	sh("cd ../../" + project_name + " && pod deintegrate")
+	sh("cd ../../" + project_name + " && rm -rf Pods/")
 
+	sh("cd ../../" + project_name + " && /usr/libexec/PlistBuddy -c 'Set :CFBundleName " + app_name + "' " + project_name + "/Info.plist")
+
+	sh("cd ../../" + project_name + " && sed -i '' 's/Starter/" + project_name + "/g' " + project_name + ".xcodeproj/project.pbxproj")
+	sh("cd ../../" + project_name + " && sed -i '' 's/Starter/" + project_name + "/g' Podfile")
+	sh("cd ../../" + project_name + " && pod install")
+
+	sh("git remote set-url " + git_origin_url)
+	sh("git commit --all -m 'Setup new project'")
+	sh("git push")
   end
 
 end

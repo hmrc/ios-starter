@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000287">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="01: echo 'Creating new project'" time="0.004977">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="02: cp -r ../../Starter ../../test_project" time="0.124482">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="03: cd ../../test_project" time="0.008064">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: cd ../../test_project &amp;&amp; mv Starter test_project" time="0.006687">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: cd ../../test_project &amp;&amp; mv StarterUITests test_projectUITests" time="0.006245">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: cd ../../test_project &amp;&amp; mv StarterTests test_projectTests" time="0.006833">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: cd ../../test_project &amp;&amp; mv Starter.xcodeproj test_project.xcodeproj" time="0.006366">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: cd ../../test_project &amp;&amp; rm -rf Starter.xcworkspace" time="0.007678">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: cd ../../test_project &amp;&amp; pod deintegrate" time="1.031119">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: cd ../../test_project &amp;&amp; rm -rf Pods/" time="0.006345">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: cd ../../test_project &amp;&amp; /usr/libexec/PlistBuddy -c 'Set :CFBundleName test_app' test_project/Info.plist" time="0.006884">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: cd ../../test_project &amp;&amp; sed -i '' 's/Starter/test_project/g' test_project.xcodeproj/project.pbxproj" time="0.008405">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="13: cd ../../test_project &amp;&amp; sed -i '' 's/Starter/test_project/g' Podfile" time="0.00688">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="14: cd ../../test_project &amp;&amp; pod install" time="1.254877">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>
