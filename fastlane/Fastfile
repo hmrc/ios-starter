@@ -23,26 +23,23 @@ platform :ios do
   	app_name = prompt(text: "What's the app name?")
   	git_origin_url = prompt(text: "What's the new git repo url?")
 
-	sh("cp -r ../../Starter ../../" + project_name)
-	sh("cd ../../" + project_name) 
-	sh("cd ../../" + project_name + " && mv Starter " + project_name)
-	sh("cd ../../" + project_name + " && mv StarterUITests " + project_name + "UITests")
-	sh("cd ../../" + project_name + " && mv StarterTests " + project_name + "Tests")
-	sh("cd ../../" + project_name + " && mv Starter.xcodeproj " + project_name + ".xcodeproj")
-
-	sh("cd ../../" + project_name + " && rm -rf Starter.xcworkspace")
-	sh("cd ../../" + project_name + " && pod deintegrate")
-	sh("cd ../../" + project_name + " && rm -rf Pods/")
-
-	sh("cd ../../" + project_name + " && /usr/libexec/PlistBuddy -c 'Set :CFBundleName " + app_name + "' " + project_name + "/Info.plist")
-
-	sh("cd ../../" + project_name + " && sed -i '' 's/Starter/" + project_name + "/g' " + project_name + ".xcodeproj/project.pbxproj")
-	sh("cd ../../" + project_name + " && sed -i '' 's/Starter/" + project_name + "/g' Podfile")
-	sh("cd ../../" + project_name + " && pod install")
-
-	sh("cd ../../" + project_name + " && git remote set-url origin " + git_origin_url)
-	sh("cd ../../" + project_name + " && git commit --all -m 'Setup new project'")
-	sh("cd ../../" + project_name + " && git push")
+  	sh("cd ../../ && git clone " + git_origin_url) 
+	sh("cp -r ../../Starter ../../" + project_name + "/app")
+	sh("cd ../../" + project_name + "/app && rm -rf .git")
+	sh("cd ../../" + project_name + "/app && mv Starter " + project_name)
+	sh("cd ../../" + project_name + "/app && mv StarterUITests " + project_name + "UITests")
+	sh("cd ../../" + project_name + "/app && mv StarterTests " + project_name + "Tests")
+	sh("cd ../../" + project_name + "/app && mv Starter.xcodeproj " + project_name + ".xcodeproj")
+	sh("cd ../../" + project_name + "/app && rm -rf Starter.xcworkspace")
+	sh("cd ../../" + project_name + "/app && pod deintegrate")
+	sh("cd ../../" + project_name + "/app && rm -rf Pods/")
+	sh("cd ../../" + project_name + "/app && /usr/libexec/PlistBuddy -c 'Set :CFBundleName " + app_name + "' " + project_name + "/Info.plist")
+	sh("cd ../../" + project_name + "/app && sed -i '' 's/Starter/" + project_name + "/g' " + project_name + ".xcodeproj/project.pbxproj")
+	sh("cd ../../" + project_name + "/app && sed -i '' 's/Starter/" + project_name + "/g' Podfile")
+	sh("cd ../../" + project_name + "/app && pod install")
+	sh("cd ../../" + project_name + "/app && git add --all")
+	sh("cd ../../" + project_name + "/app && git commit -m 'Setup new project'")
+	sh("cd ../../" + project_name + "/app && git push")
   end
 
 end
