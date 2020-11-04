@@ -54,6 +54,8 @@
 		6C5F18002551ACEC0005D38D /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F17FC2551ACEC0005D38D /* SettingsInteractor.swift */; };
 		6C5F18012551ACEC0005D38D /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F17FD2551ACEC0005D38D /* SettingsRouter.swift */; };
 		6C5F18092551AEBB0005D38D /* TabBarController+DisplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F18082551AEBB0005D38D /* TabBarController+DisplayScene.swift */; };
+		6C5F180E2552B0910005D38D /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F180D2552B0910005D38D /* SettingsModel.swift */; };
+		6C5F18132552B0970005D38D /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F18122552B0970005D38D /* HomeModel.swift */; };
 		6CAE021B25375776004EDC15 /* DisplayableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE021A25375776004EDC15 /* DisplayableProtocol.swift */; };
 		6CAE0226253757D5004EDC15 /* ios-core-library in Frameworks */ = {isa = PBXBuildFile; productRef = 6CAE0225253757D5004EDC15 /* ios-core-library */; };
 		6CAE022C253757E9004EDC15 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 6CAE022B253757E9004EDC15 /* UIComponents */; };
@@ -133,6 +135,8 @@
 		6C5F17FC2551ACEC0005D38D /* SettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
 		6C5F17FD2551ACEC0005D38D /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
 		6C5F18082551AEBB0005D38D /* TabBarController+DisplayScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBarController+DisplayScene.swift"; sourceTree = "<group>"; };
+		6C5F180D2552B0910005D38D /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		6C5F18122552B0970005D38D /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		6CAE021A25375776004EDC15 /* DisplayableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayableProtocol.swift; sourceTree = "<group>"; };
 		6CAE023A25375884004EDC15 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6CAE023F2537588C004EDC15 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -328,6 +332,7 @@
 				6CAE023F2537588C004EDC15 /* HomeRouter.swift */,
 				6CAE024425375894004EDC15 /* HomeInteractor.swift */,
 				6CAE024925375899004EDC15 /* HomePresenter.swift */,
+				6C5F18122552B0970005D38D /* HomeModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -339,6 +344,7 @@
 				6C5F17FB2551ACEC0005D38D /* SettingsPresenter.swift */,
 				6C5F17FD2551ACEC0005D38D /* SettingsRouter.swift */,
 				6C5F17FA2551ACEC0005D38D /* SettingsViewController.swift */,
+				6C5F180D2552B0910005D38D /* SettingsModel.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -651,8 +657,10 @@
 				6CAE024525375894004EDC15 /* HomeInteractor.swift in Sources */,
 				6CF30EBC2551606A0023C410 /* StackView.swift in Sources */,
 				6CAE023B25375884004EDC15 /* HomeViewController.swift in Sources */,
+				6C5F180E2552B0910005D38D /* SettingsModel.swift in Sources */,
 				6CAE025E25375BD2004EDC15 /* UIWindow+ReplaceViewController.swift in Sources */,
 				6CF30ED1255161750023C410 /* UIEdgeInsets+Padding.swift in Sources */,
+				6C5F18132552B0970005D38D /* HomeModel.swift in Sources */,
 				6CF30EAD25515F6D0023C410 /* SceneDelegate.swift in Sources */,
 				6C5F17FE2551ACEC0005D38D /* SettingsViewController.swift in Sources */,
 				6C5F18092551AEBB0005D38D /* TabBarController+DisplayScene.swift in Sources */,

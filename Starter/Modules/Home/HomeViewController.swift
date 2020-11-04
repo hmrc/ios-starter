@@ -19,7 +19,7 @@ extension Home {
 
         override func viewDidLoad() {
             super.viewDidLoad()
-            title = "Home" 
+            title = "Home"
             view.backgroundColor = .white
         }
 
