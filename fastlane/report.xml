@@ -5,102 +5,54 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000289">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000387">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="01: prompt" time="3.667721">
+      <testcase classname="fastlane.lanes" name="1: prompt" time="2.946605">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="02: prompt" time="1.805266">
+      <testcase classname="fastlane.lanes" name="2: prompt" time="1.663407">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="03: prompt" time="8.871628">
+      <testcase classname="fastlane.lanes" name="3: prompt" time="7.773919">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="04: cp -r ../../Starter ../../vccm-ios-app" time="0.198851">
+      <testcase classname="fastlane.lanes" name="4: prompt" time="1.331805">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="05: cd ../../vccm-ios-app" time="0.008567">
+      <testcase classname="fastlane.lanes" name="5: cp -r ../../Starter ../../vccm-ios-app" time="0.200294">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="06: cd ../../vccm-ios-app &amp;&amp; mv Starter vccm-ios-app" time="0.007181">
+      <testcase classname="fastlane.lanes" name="6: cd ../../vccm-ios-app" time="0.008023">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="07: cd ../../vccm-ios-app &amp;&amp; mv StarterUITests vccm-ios-appUITests" time="0.006622">
+      <testcase classname="fastlane.lanes" name="7: cd ../../vccm-ios-app &amp;&amp; git remote set-url origin git@github.com:NHSNSS-DAS/vccm-ios-app.git" time="0.01378">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="08: cd ../../vccm-ios-app &amp;&amp; mv StarterTests vccm-ios-appTests" time="0.006667">
+      <testcase classname="fastlane.lanes" name="8: cd ../../vccm-ios-app &amp;&amp; git fetch" time="1.267501">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="09: cd ../../vccm-ios-app &amp;&amp; mv Starter.xcodeproj vccm-ios-app.xcodeproj" time="0.007321">
+      <testcase classname="fastlane.lanes" name="9: cd ../../vccm-ios-app &amp;&amp; git checkout main" time="0.0512">
         
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="10: cd ../../vccm-ios-app &amp;&amp; rm -rf Starter.xcworkspace" time="0.010104">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="11: cd ../../vccm-ios-app &amp;&amp; pod deintegrate" time="1.371273">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="12: cd ../../vccm-ios-app &amp;&amp; rm -rf Pods/" time="0.007003">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="13: cd ../../vccm-ios-app &amp;&amp; /usr/libexec/PlistBuddy -c 'Set :CFBundleName VCCM' vccm-ios-app/Info.plist" time="0.00975">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="14: cd ../../vccm-ios-app &amp;&amp; sed -i '' 's/Starter/vccm-ios-app/g' vccm-ios-app.xcodeproj/project.pbxproj" time="0.010534">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="15: cd ../../vccm-ios-app &amp;&amp; sed -i '' 's/Starter/vccm-ios-app/g' Podfile" time="0.007789">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="16: cd ../../vccm-ios-app &amp;&amp; pod install" time="1.880589">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="17: cd ../../vccm-ios-app &amp;&amp; git remote set-url origin git@github.com:NHSNSS-DAS/vccm-ios-app.git" time="0.017395">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="18: cd ../../vccm-ios-app &amp;&amp; git commit --all -m 'Setup new project'" time="0.246466">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="19: cd ../../vccm-ios-app &amp;&amp; git push" time="5.797844">
+          <failure message="/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane/lib/fastlane/actions/actions_helper.rb:67:in `execute_action'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane/lib/fastlane/fast_file.rb:218:in `sh'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane/lib/fastlane/fast_file.rb:212:in `sh'&#10;Fastfile:31:in `block (2 levels) in parsing_binding'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane/lib/fastlane/lane_manager.rb:47:in `cruise_lane'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane/lib/fastlane/commands_generator.rb:108:in `block (2 levels) in run'&#10;/Library/Ruby/Gems/2.6.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Library/Ruby/Gems/2.6.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:153:in `run'&#10;/Library/Ruby/Gems/2.6.0/gems/commander-fastlane-4.4.6/lib/commander/runner.rb:476:in `run_active_command'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Library/Ruby/Gems/2.6.0/gems/commander-fastlane-4.4.6/lib/commander/delegates.rb:15:in `run!'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane/lib/fastlane/commands_generator.rb:352:in `run'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane/lib/fastlane/commands_generator.rb:41:in `start'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/fastlane/lib/fastlane/cli_tools_distributor.rb:119:in `take_off'&#10;/Library/Ruby/Gems/2.6.0/gems/fastlane-2.166.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/usr/local/bin/fastlane:23:in `load'&#10;/usr/local/bin/fastlane:23:in `&lt;main&gt;'&#10;&#10;Exit status of command 'cd ../../vccm-ios-app &amp;&amp; git checkout main' was 1 instead of 0.&#10;error: Your local changes to the following files would be overwritten by checkout:&#10;	Podfile&#10;	Podfile.lock&#10;	Pods/Manifest.lock&#10;	Pods/Pods.xcodeproj/project.pbxproj&#10;Please commit your changes or stash them before you switch branches.&#10;Aborting&#10;" />
         
       </testcase>
     
