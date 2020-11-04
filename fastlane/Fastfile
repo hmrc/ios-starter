@@ -26,6 +26,9 @@ platform :ios do
 
 	sh("cp -r ../../Starter ../../" + project_name)
 	sh("cd ../../" + project_name) 
+	sh("cd ../../" + project_name + " && git remote set-url origin " + git_origin_url)
+	sh("cd ../../" + project_name + " && git fetch")
+	sh("cd ../../" + project_name + " && git checkout " + main_repo_branch)
 	sh("cd ../../" + project_name + " && mv Starter " + project_name)
 	sh("cd ../../" + project_name + " && mv StarterUITests " + project_name + "UITests")
 	sh("cd ../../" + project_name + " && mv StarterTests " + project_name + "Tests")
@@ -41,9 +44,6 @@ platform :ios do
 	sh("cd ../../" + project_name + " && sed -i '' 's/Starter/" + project_name + "/g' Podfile")
 	sh("cd ../../" + project_name + " && pod install")
 
-	sh("cd ../../" + project_name + " && git remote set-url origin " + git_origin_url)
-	sh("cd ../../" + project_name + " && git fetch")
-	sh("cd ../../" + project_name + " && git checkout " + main_repo_branch)
 	sh("cd ../../" + project_name + " && git commit --all -m 'Setup new project'")
 	sh("cd ../../" + project_name + " && git push")
   end
