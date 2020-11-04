@@ -22,6 +22,7 @@ platform :ios do
   	project_name = prompt(text: "What's the project name?")
   	app_name = prompt(text: "What's the app name?")
   	git_origin_url = prompt(text: "What's the new git repo url?")
+  	main_repo_branch = prompt(text: "What's the main repo branch? (main or master)")
 
 	sh("cp -r ../../Starter ../../" + project_name)
 	sh("cd ../../" + project_name) 
@@ -41,6 +42,8 @@ platform :ios do
 	sh("cd ../../" + project_name + " && pod install")
 
 	sh("cd ../../" + project_name + " && git remote set-url origin " + git_origin_url)
+	sh("cd ../../" + project_name + " && git fetch")
+	sh("cd ../../" + project_name + " && git checkout " + main_repo_branch)
 	sh("cd ../../" + project_name + " && git commit --all -m 'Setup new project'")
 	sh("cd ../../" + project_name + " && git push")
   end

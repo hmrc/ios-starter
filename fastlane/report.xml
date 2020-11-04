@@ -5,77 +5,102 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000287">
+      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000289">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="01: echo 'Creating new project'" time="0.004977">
+      <testcase classname="fastlane.lanes" name="01: prompt" time="3.667721">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="02: cp -r ../../Starter ../../test_project" time="0.124482">
+      <testcase classname="fastlane.lanes" name="02: prompt" time="1.805266">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="03: cd ../../test_project" time="0.008064">
+      <testcase classname="fastlane.lanes" name="03: prompt" time="8.871628">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="04: cd ../../test_project &amp;&amp; mv Starter test_project" time="0.006687">
+      <testcase classname="fastlane.lanes" name="04: cp -r ../../Starter ../../vccm-ios-app" time="0.198851">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="05: cd ../../test_project &amp;&amp; mv StarterUITests test_projectUITests" time="0.006245">
+      <testcase classname="fastlane.lanes" name="05: cd ../../vccm-ios-app" time="0.008567">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="06: cd ../../test_project &amp;&amp; mv StarterTests test_projectTests" time="0.006833">
+      <testcase classname="fastlane.lanes" name="06: cd ../../vccm-ios-app &amp;&amp; mv Starter vccm-ios-app" time="0.007181">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="07: cd ../../test_project &amp;&amp; mv Starter.xcodeproj test_project.xcodeproj" time="0.006366">
+      <testcase classname="fastlane.lanes" name="07: cd ../../vccm-ios-app &amp;&amp; mv StarterUITests vccm-ios-appUITests" time="0.006622">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="08: cd ../../test_project &amp;&amp; rm -rf Starter.xcworkspace" time="0.007678">
+      <testcase classname="fastlane.lanes" name="08: cd ../../vccm-ios-app &amp;&amp; mv StarterTests vccm-ios-appTests" time="0.006667">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="09: cd ../../test_project &amp;&amp; pod deintegrate" time="1.031119">
+      <testcase classname="fastlane.lanes" name="09: cd ../../vccm-ios-app &amp;&amp; mv Starter.xcodeproj vccm-ios-app.xcodeproj" time="0.007321">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="10: cd ../../test_project &amp;&amp; rm -rf Pods/" time="0.006345">
+      <testcase classname="fastlane.lanes" name="10: cd ../../vccm-ios-app &amp;&amp; rm -rf Starter.xcworkspace" time="0.010104">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="11: cd ../../test_project &amp;&amp; /usr/libexec/PlistBuddy -c 'Set :CFBundleName test_app' test_project/Info.plist" time="0.006884">
+      <testcase classname="fastlane.lanes" name="11: cd ../../vccm-ios-app &amp;&amp; pod deintegrate" time="1.371273">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="12: cd ../../test_project &amp;&amp; sed -i '' 's/Starter/test_project/g' test_project.xcodeproj/project.pbxproj" time="0.008405">
+      <testcase classname="fastlane.lanes" name="12: cd ../../vccm-ios-app &amp;&amp; rm -rf Pods/" time="0.007003">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="13: cd ../../test_project &amp;&amp; sed -i '' 's/Starter/test_project/g' Podfile" time="0.00688">
+      <testcase classname="fastlane.lanes" name="13: cd ../../vccm-ios-app &amp;&amp; /usr/libexec/PlistBuddy -c 'Set :CFBundleName VCCM' vccm-ios-app/Info.plist" time="0.00975">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="14: cd ../../test_project &amp;&amp; pod install" time="1.254877">
+      <testcase classname="fastlane.lanes" name="14: cd ../../vccm-ios-app &amp;&amp; sed -i '' 's/Starter/vccm-ios-app/g' vccm-ios-app.xcodeproj/project.pbxproj" time="0.010534">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="15: cd ../../vccm-ios-app &amp;&amp; sed -i '' 's/Starter/vccm-ios-app/g' Podfile" time="0.007789">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="16: cd ../../vccm-ios-app &amp;&amp; pod install" time="1.880589">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="17: cd ../../vccm-ios-app &amp;&amp; git remote set-url origin git@github.com:NHSNSS-DAS/vccm-ios-app.git" time="0.017395">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="18: cd ../../vccm-ios-app &amp;&amp; git commit --all -m 'Setup new project'" time="0.246466">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="19: cd ../../vccm-ios-app &amp;&amp; git push" time="5.797844">
         
       </testcase>
     
